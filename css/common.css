@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*可将常用的公共样式提出来（例：颜色(渐变颜色)/边框/圆角/margin/padding/字体大小等）*/
+.c-666{
+    color:#666;
+}
+.bra-8{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
