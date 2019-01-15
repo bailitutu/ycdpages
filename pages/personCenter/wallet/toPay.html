@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电</title>
+    <link rel="stylesheet" href="../../../css/weui.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+</head>
+<body ontouchstart>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-充值</title>
+    <link rel="stylesheet" href="../../../css/weui.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+</head>
+<body ontouchstart>
+<div ng-show="!showAliPay">
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <h3 class="lt-30">其他充值金额</h3>
+                <div class="weui-flex line-height-large">
+                    <h3>￥</h3>
+                    <div class="weui-flex__item">
+                        <input class="weui-input p-l-1 h3"  type="number" placeholder="请输入金额" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells weui-radio_btn">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <h3 class="lt-30">充值金额</h3>
+            </div>
+        </div>
+        <div class="weui-cell text-center">
+            <div class="weui-cell__bd">
+                <div class="weui-flex">
+                    <label class="weui-flex__item m-r_1 m-l_1 m-b-1">
+                        <!--30-->
+                        <input class="weui-check" value="30"   type="radio" />
+                        <div class="radio_btn h3">30元</div>
+                    </label>
+                    <label class="weui-flex__item m-r_1 m-l_1">
+                        <input class="weui-check" value="50"   type="radio" />
+                        <div class="radio_btn h3">50元</div>
+                    </label>
+                    <label class="weui-flex__item m-r_1 m-l_1">
+                        <input class="weui-check" value="100"   type="radio" />
+                        <div class="radio_btn h3" style="margin-right: 0">100元</div>
+                    </label>
+                </div>
+                <div class="weui-flex">
+                    <label class="weui-flex__item m-r_1 m-l_1">
+                        <input class="weui-check" value="150"   type="radio" />
+                        <div class="radio_btn h3">150元</div>
+                    </label>
+                    <label class="weui-flex__item m-r_1 m-l_1">
+                        <input class="weui-check" value="200"   type="radio" />
+                        <div class="radio_btn h3">200元</div>
+                    </label>
+                    <label class="weui-flex__item m-r_1 m-l_1">
+                        <input class="weui-check" value="500"   type="radio" />
+                        <div class="radio_btn h3" style="margin-right: 0">500元</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cell" >
+            <div class="weui-cell__bd">
+                <h3 class="lt-30 text-danger">活动赠送：100.00</h3>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd" style="height:24px;line-height: 24px;padding-left:28px;background: url('../../../images/icon_yue.png') no-repeat center left;background-size:22px 19px;" >钱包余额</div>
+            <div class="weui-cell__bd text-right">100.00</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd" style="height:18px;line-height: 24px;padding-left:28px;background: url('../../../images/icon_sub.png') no-repeat center left;background-size:24px 18px;" >子账户余额</div>
+            <div class="weui-cell__bd text-right ">10000000.00</div>
+        </div>
+    </div>
+    <div class="weui-cells weui-cell_access" >
+        <div class="weui-cell" >
+            <div class="weui-cell__hd" style="height:24px;line-height: 24px;" >选择优惠券</div>
+            <div class="weui-cell__bd text-right text-danger">10.00</div>
+            <div class="weui-cell__ft"></div>
+        </div>
+    </div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd wxpay" >微信支付</div>
+            <div class="weui-cell__bd pay_sel active" >
+                <i></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd alipay" >支付宝支付</div>
+            <div class="weui-cell__bd pay_sel" >
+                <i ></i>
+            </div>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <button >立即充值</button>
+    </div>
+
+</div>
+
+<!--当为支付宝支付时要显示 去掉 dn -->
+<div id="alipayForm" class="dn" ></div>
+
+
+<script src="../../../lib/jquery-2.1.4.js"></script>
+<script src="../../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../../lib/jquery-weui.min.js"></script>
+</body>
+</html>
+
+
+
+<script src="../../../lib/jquery-2.1.4.js"></script>
+<script src="../../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../../lib/jquery-weui.min.js"></script>
+</body>
+</html>
+

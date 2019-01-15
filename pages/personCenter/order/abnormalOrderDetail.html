@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-我的订单详情</title>
+    <link rel="stylesheet" href="../../../css/weui.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+</head>
+<body ontouchstart>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <img class="img__thumb icr" src="../../../images/bg_upload.png" alt="">
+        </div>
+        <div class="weui-cell__bd">
+            <h3 class="lt-30">充电时长92分钟</h3>
+            <h4>100.00</h4>
+        </div>
+        <div class="weui-cell-ft">
+            <h4 class="text-primary">已完成</h4>
+        </div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">预充金额</label></div>
+        <div class="weui-cell__bd text-right">100.00</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">充电时长</label></div>
+        <div class="weui-cell__bd text-right">30分钟</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">充电电量</label></div>
+        <div class="weui-cell__bd text-right">{100度</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">开始时间</label></div>
+        <div class="weui-cell__bd text-right">2019123123</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">结束时间</label></div>
+        <div class="weui-cell__bd text-right">2019123123</div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">电费</label></div>
+        <div class="weui-cell__bd text-right">2019123123</div>
+    </div>
+    <div class="weui-cell" ng-if="data.type">
+        <div class="weui-cell__hd"><label class="weui-label">服务费</label></div>
+        <div class="weui-cell__bd text-right">2019123123</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">付款账户</label></div>
+        <div class="weui-cell__bd text-right">士大夫</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">商品说明</label></div>
+        <div class="weui-cell__bd text-right">是的发送到发送到发</div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">创建时间</label></div>
+        <div class="weui-cell__bd text-right">2019123123</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">订单号</label></div>
+        <div class="weui-cell__bd text-right">2019123123</div>
+    </div>
+</div>
+<div class="weui-btn-area">
+    <button  >结束订单</button>
+</div>
+
+
+
+
+
+<script src="../../../lib/jquery-2.1.4.js"></script>
+<script src="../../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../../lib/jquery-weui.min.js"></script>
+</body>
+</html>
+

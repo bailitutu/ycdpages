@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>设置</title>
+    <link rel="stylesheet" href="../../../css/weui.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+</head>
+<body ontouchstart>
+<div class="weui-cells-fg">
+    <label class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd">头像</div>
+        <div class="weui-cell__bd text-right">
+            <img style="border-radius: 50%;" class="img__thumb img_small img-circle" src="../../../images/cdz.png">
+            <input  uploader="uploader" type="file" accept="image/*" style="position: absolute;left: -300%">
+        </div>
+        <div class="weui-cell__ft"></div>
+    </label>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd">昵称</div>
+        <div class="weui-cell__bd text-right" style="font-size:13px;">张三</div>
+        <div class="weui-cell__ft"></div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd">手机号</div>
+        <div class="weui-cell__bd text-right" style="font-size:13px;">18454654654</div>
+        <div class="weui-cell__ft"></div>
+    </div>
+    <div  class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd">身份认证</div>
+        <div class="weui-cell__bd text-right"><span class="text-primary" style="font-size:13px;">{345646465131</span></div>
+        <div class="weui-cell__ft"></div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__hd">修改密码</div>
+        <div class="weui-cell__ft"></div>
+    </div>
+</div>
+<div class="weui-btn-area">
+    <button >退出登录</button>
+</div>
+
+
+
+
+<script src="../../../lib/jquery-2.1.4.js"></script>
+<script src="../../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../../lib/jquery-weui.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-预充金额</title>
+    <link rel="stylesheet" href="../../css/weui.min.css">
+    <link rel="stylesheet" href="../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body ontouchstart>
+<form name="myForm" novalidate>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <h3 class="lt-30">预计充电费用</h3>
+                <div class="weui-flex line-height-large">
+                    <h3>￥</h3>
+                    <div class="weui-flex__item"><input class="weui-input p-l-1 h3" type="number" min="0"   name="je" placeholder="请输入金额" required></div>
+                </div>
+            </div>
+            <div class="weui-cell__ft pr-1">
+                <span class="primary-label">去充值</span>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <h3 class="lt-30">预计充电电量</h3>
+                <div class="weui-flex line-height-large">
+                    <h3>度</h3>
+                    <div class="weui-flex__item"><input class="weui-input p-l-1 h3" type="number" min="0" name="dl" placeholder="请输入预计充电量" required></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">充电费率</div>
+            <div class="weui-cell__bd text-right">100元/度 </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">服务费率</div>
+            <div class="weui-cell__bd text-right">100元/度</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">预计可充</div>
+            <div class="weui-cell__bd text-right">100度</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">钱包余额</div>
+            <div class="weui-cell__bd text-right">100</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">子账户余额</div>
+            <div class="weui-cell__bd text-right">100</div>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <button >立即充电</button>
+    </div>
+</form>
+
+
+<script src="../../lib/jquery-2.1.4.js"></script>
+<script src="../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../lib/jquery-weui.min.js"></script>
+</body>
+</html>

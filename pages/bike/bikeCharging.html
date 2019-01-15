@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-充电中</title>
+    <link rel="stylesheet" href="../../css/weui.min.css">
+    <link rel="stylesheet" href="../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body ontouchstart>
+
+<div class="weui-loadmore dn" >
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在连接设备</span>
+</div>
+<div class="header-cell line-height-base p-2" >
+    <img class="img-large" src="../../images/qc.png">
+    <p class="lt-30" >当前电量（SOC）<span class="text-primary">80</span> %<br>
+</div>
+<div class="weui-panel" >
+    <div class="weui-panel__hd">预充信息</div>
+    <!--以下的ng-if 是用于判断那种充电类型的，仅供参考，记得删除-->
+    <div class="weui-panel__bd">
+        <div class="weui-cell" ng-if="data.typePre == '1'">
+            <div class="weui-cell__hd"><label class="weui-label">充电金额</label></div>
+            <div class="weui-cell__bd text-right">￥100.00</div>
+        </div>
+        <div class="weui-cell" ng-if="data.typePre == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电电量</label></div>
+            <div class="weui-cell__bd text-right">100.00度</div>
+        </div>
+        <div class="weui-cell" ng-if="data.typePre == '3'">
+            <div class="weui-cell__hd"><label class="weui-label">预充结束时间</label></div>
+            <div class="weui-cell__bd text-right">2019-01-12</div>
+        </div>
+        <div class="weui-cell" ng-if="data.cinterface == '1'">
+            <div class="weui-cell__hd"><label class="weui-label">充电电流</label></div>
+            <div class="weui-cell__bd text-right">100A</div>
+        </div>
+        <div class="weui-cell" ng-if="data.cinterface == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电A相电流</label></div>
+            <div class="weui-cell__bd text-right">100A</div>
+        </div>
+        <div class="weui-cell" ng-if="data.cinterface == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电B相电流</label></div>
+            <div class="weui-cell__bd text-right">100A</div>
+        </div>
+        <div class="weui-cell" ng-if="data.cinterface == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电C相电流</label></div>
+            <div class="weui-cell__bd text-right">100A</div>
+        </div>
+
+        <div class="weui-cell"  ng-if="data.cinterface == '1'">
+            <div class="weui-cell__hd"><label class="weui-label">充电电压</label></div>
+            <div class="weui-cell__bd text-right">100V</div>
+        </div>
+        <div class="weui-cell"  ng-if="data.cinterface == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电A相电压</label></div>
+            <div class="weui-cell__bd text-right">100V</div>
+        </div>
+        <div class="weui-cell"  ng-if="data.cinterface == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电B相电压</label></div>
+            <div class="weui-cell__bd text-right">100V</div>
+        </div>
+        <div class="weui-cell"  ng-if="data.cinterface == '2'">
+            <div class="weui-cell__hd"><label class="weui-label">充电C相电压</label></div>
+            <div class="weui-cell__bd text-right">100V</div>
+        </div>
+
+    </div>
+</div>
+<div class="weui-panel">
+    <div class="weui-panel__hd">已充信息</div>
+    <div class="weui-panel__bd">
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">当前费率</label></div>
+            <div class="weui-cell__bd text-right">100元/度</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">充电电量</label></div>
+            <div class="weui-cell__bd text-right">100度</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">充电电费</label></div>
+            <div class="weui-cell__bd text-right">￥100</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">服务费</label></div>
+            <div class="weui-cell__bd text-right">￥100</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><h3 class="weui-label">总计</h3></div>
+            <div class="weui-cell__bd text-right text-danger h3">￥100</div>
+        </div>
+    </div>
+</div>
+<div class="weui-btn-area" >
+    <button >结束充电</button>
+</div>
+
+<div class="weui-loadmore dn" >
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在结束充电，请稍候...</span>
+</div>
+
+
+
+<script src="../../lib/jquery-2.1.4.js"></script>
+<script src="../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../lib/jquery-weui.min.js"></script>
+</body>
+</html>

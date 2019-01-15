@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-充电完成</title>
+    <link rel="stylesheet" href="../../css/weui.min.css">
+    <link rel="stylesheet" href="../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body ontouchstart>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <h3>万达充电桩</h3>
+            <span class="text-desc h5 lt-24">
+              终端编号：17247825382758<br>
+              终端类型：交流桩<br>
+              充电接口：国标2011<br>
+              终端功率：7KW
+            </span>
+        </div>
+        <div class="weui-cell__ft">
+            <span class="text-primary">已完成</span><br><br>
+            <span class="warning-label">慢</span>
+        </div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">平均电流</label></div>
+        <div class="weui-cell__bd text-right">100A</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">平均电压</label></div>
+        <div class="weui-cell__bd text-right">100V</div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">当前费率</label></div>
+        <div class="weui-cell__bd text-right">100元/度</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">充电电量</label></div>
+        <div class="weui-cell__bd text-right">100度</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">充电时长</label></div>
+        <div class="weui-cell__bd text-right">100分钟</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">服务费</label></div>
+        <div class="weui-cell__bd text-right">￥100</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><h3 class="weui-label">总计</h3></div>
+        <div class="weui-cell__bd text-right h3 text-danger">￥100</div>
+    </div>
+</div>
+<div class="weui-btn-area">
+    <button >返回</button>
+</div>
+
+
+<script src="../../lib/jquery-2.1.4.js"></script>
+<script src="../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../lib/jquery-weui.min.js"></script>
+</body>
+</html>

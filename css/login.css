@@ -1,0 +1,152 @@
+html,body {
+  min-height: 100%;
+}
+body {
+/*url("../images/by.png") no-repeat center bottom / contain,*/
+  background:linear-gradient(-7deg, #74eeff 0%, #3aa1ff 100%);
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+
+}
+.dn{
+  display: none;
+}
+.tal{
+  text-align: left;
+}
+.tac{
+  text-align: center;
+}
+.tar{
+  text-align: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.radio {
+  position: absolute;
+  left: -9999em
+}
+.radio+div {
+  border: 1px dashed transparent;
+}
+.radio:checked+div {
+  border: 1px dashed white;
+  border-radius: 6px
+}
+/*修改input 黄色背景*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  background-color: rgb(0, 0, 0) !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+  -webkit-tap-highlight-color:rgba(0,0,0,0) !important;
+}
+
+.fg {
+  float: left;
+  width: 28%;
+  display: block;
+}
+
+.logo {
+  margin: 30px auto 45px;
+}
+.yzm_input{
+  background-color: transparent;
+  border-radius: 6px;
+  border:none;
+  height: 23px;
+  line-height: 23px;
+  width: 100%;
+  margin-bottom: 2px;
+  color: white;
+}
+.input,.addon {
+  background-color: transparent;
+  border:1px solid white;
+  border-radius:6px;
+  height: 43px;
+  line-height: 23px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+.addon input {
+  background-color: transparent;
+  border:none;
+  height: 100%;
+  color: white;
+}
+input::-webkit-input-placeholder{
+  color:white;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:white;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:white;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+  color:white;
+}
+
+button {
+  display: block;
+  background-color: white;
+  border-radius: 6px;
+  font-size:15px;
+  border: none;
+  width: 100%;
+  color: #1791ff;
+  line-height: 43px;
+  margin-bottom: 10px;
+}
+:focus{
+  outline: 0;
+}
+.has-error {
+  box-shadow: 0 0 4px red;
+}
+.has-error-text {
+  color: red;
+}
+.help-block {
+  color: red;
+  padding-left: 10px;
+  margin-top: -16px;
+}
+.help-block p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.icr {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+h3 {
+  margin: 10px auto;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+button:disabled{
+  opacity: 0.65;
+}

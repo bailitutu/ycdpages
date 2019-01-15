@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-汽车充电地图</title>
+    <link rel="stylesheet" href="../../css/weui.min.css">
+    <link rel="stylesheet" href="../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body ontouchstart>
+<div class="search_item" >
+    <form class="weui-search-bar__form"   style="height:40px;" >
+        <div class="weui-search-bar__box">
+            <i class="search_icon"  ></i>
+            <input class="weui-search-bar__input search_input" id="searchInput"  placeholder="请输入关键字"   name="querykey"  type="search">
+        </div>
+    </form>
+</div>
+
+<div class="search_res dn"  >
+    <div class="search_mark">
+        <div class="serach_list">
+            <div class="res_cell" >
+                <img src="../../images/bg_upload.png" alt="">
+                <div class="res_info">
+                    <div class="res_name">
+                        <h4>杭州万达广场充电站 <span>运营中</span></h4>
+                    </div>
+                    <div class="res_fee">
+                        <p>费率：1.20元/度</p>
+                    </div>
+                    <div class="res_tips">奥能运营商丨公用站丨拱墅区</div>
+                </div>
+                <div class="res_driving" >
+                    <img src="../../images/icon_driving.png" alt="">
+                    <p class="res_dis">289km</p>
+                </div>
+            </div>
+            <div class="res_cell" >
+                <img src="../../images/bg_upload.png" alt="">
+                <div class="res_info">
+                    <div class="res_name">
+                        <h4>杭州万达广场充电站 <span>运营中</span></h4>
+                    </div>
+                    <div class="res_fee">
+                        <p>费率：1.20元/度</p>
+                    </div>
+                    <div class="res_tips">奥能运营商丨公用站丨拱墅区</div>
+                </div>
+                <div class="res_driving" >
+                    <img src="../../images/icon_driving.png" alt="">
+                    <p class="res_dis">289km</p>
+                </div>
+            </div>
+            <div class="res_cell" >
+                <img src="../../images/bg_upload.png" alt="">
+                <div class="res_info">
+                    <div class="res_name">
+                        <h4>杭州万达广场充电站 <span>运营中</span></h4>
+                    </div>
+                    <div class="res_fee">
+                        <p>费率：1.20元/度</p>
+                    </div>
+                    <div class="res_tips">奥能运营商丨公用站丨拱墅区</div>
+                </div>
+                <div class="res_driving" >
+                    <img src="../../images/icon_driving.png" alt="">
+                    <p class="res_dis">289km</p>
+                </div>
+            </div>
+            <div class="res_cell" >
+                <img src="../../images/bg_upload.png" alt="">
+                <div class="res_info">
+                    <div class="res_name">
+                        <h4>杭州万达广场充电站 <span>运营中</span></h4>
+                    </div>
+                    <div class="res_fee">
+                        <p>费率：1.20元/度</p>
+                    </div>
+                    <div class="res_tips">奥能运营商丨公用站丨拱墅区</div>
+                </div>
+                <div class="res_driving" >
+                    <img src="../../images/icon_driving.png" alt="">
+                    <p class="res_dis">289km</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--地图挂载的元素-->
+<div id="map_car" style="width:100%; height:100%;position:absolute;top:0;left: 0;z-index: 1;"></div>
+
+
+
+
+
+
+<script src="../../lib/jquery-2.1.4.js"></script>
+<script src="../../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="../../lib/jquery-weui.min.js"></script>
+</body>
+</html>
