@@ -2,9 +2,307 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="wap-font-scale" content="no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>云充电-自行车充电</title>
+    <link rel="stylesheet" href="../../css/weui.min.css">
+    <link rel="stylesheet" href="../../css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/stationList.css">
 
+</head>
+<body ontouchstart class="hasHeader">
+
+<div class="head_item">
+    <div class="head_position ">
+        <input type="text" readonly value="杭州市"  id="selectCity" >
+    </div>
+    <div class="search_cell">
+        <div class="search_inner weui-cells_form">
+            <span class="search_icon"></span>
+            <input type="search" class="weui-search-bar__input search_input" id="searchInput" placeholder="输入站点名称" required="">
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img
+                    src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"
+                    alt=""></div>
+            <div class="swiper-slide"><img
+                    src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"
+                    alt=""></div>
+            <div class="swiper-slide"><img
+                    src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg"
+                    alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <div class="weui-grid__icon">
+                        <img src="../../images/icon_youhui.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        优惠
+                    </p>
+                </div>
+                <div class="weui-flex__item">
+                    <div class="weui-grid__icon">
+                        <img src="../../images/icon_map1.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">
+                        站点地图
+                    </p>
+                </div>
+                <div class="weui-flex__item">
+                    <div class="weui-grid__icon">
+                    </div>
+                    <p class="weui-grid__label">
+                    </p>
+                </div>
+                <div class="weui-flex__item">
+                    <div class="weui-grid__icon">
+                    </div>
+                    <p class="weui-grid__label">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="weui-cells filter_cell">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <p class="weui-grid__label">
+                        附近
+                    </p>
+                </div>
+                <div class="weui-flex__item">
+                    <p class="weui-grid__label">
+                        距离优先
+                    </p>
+                </div>
+                <div class="weui-flex__item">
+                    <p class="weui-grid__label">筛选 </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="station_list">
+    <div class="weui-cells ">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <img class="img__thumb" src="../../images/sjbd.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <h3 class="ellipsis">杭州万达广场充电站</h3>
+                </div>
+                <p class="weui-media-box__desc">
+                    <span class="lt-30">费率：10元/度</span><br/>奥能运营商 奥能运营 商奥能运营商</p>
+            </div>
+            <div class="weui-cell__hd distance_cell">
+                <img src="../../images/icon_juli.png" alt="">
+                <p>10km</p>
+            </div>
+        </div>
+        <div class="weui-flex p-1 br-t-1">
+            <div class="weui-flex__item">
+                当前空闲：<span class="text-primary">10</span>台 <span class="label-green label-small">免费停车</span><span class="label-blue label-small">快充</span><span class="label-yellow label-small">慢充</span>
+            </div>
+            <div class="label-primary label-small">正常</div>
+        </div>
+    </div>
+    <div class="weui-cells ">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <img class="img__thumb" src="../../images/sjbd.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <h3 class="ellipsis">杭州万达广场充电站</h3>
+                </div>
+                <p class="weui-media-box__desc">
+                    <span class="lt-30">费率：10元/度</span><br/>奥能运营商 奥能运营 商奥能运营商</p>
+            </div>
+            <div class="weui-cell__hd distance_cell">
+                <img src="../../images/icon_juli.png" alt="">
+                <p>10km</p>
+            </div>
+        </div>
+        <div class="weui-flex p-1 br-t-1">
+            <div class="weui-flex__item">
+                当前空闲：<span class="text-primary">10</span>台 <span class="label-green label-small">免费停车</span><span class="label-blue label-small">快充</span><span class="label-yellow label-small">慢充</span>
+            </div>
+            <div class="label-primary label-small">正常</div>
+        </div>
+    </div>
+    <div class="weui-cells ">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <img class="img__thumb" src="../../images/sjbd.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <h3 class="ellipsis">杭州万达广场充电站</h3>
+                </div>
+                <p class="weui-media-box__desc">
+                    <span class="lt-30">费率：10元/度</span><br/>奥能运营商 奥能运营 商奥能运营商</p>
+            </div>
+            <div class="weui-cell__hd distance_cell">
+                <img src="../../images/icon_juli.png" alt="">
+                <p>10km</p>
+            </div>
+        </div>
+        <div class="weui-flex p-1 br-t-1">
+            <div class="weui-flex__item">
+                当前空闲：<span class="text-primary">10</span>台 <span class="label-green label-small">免费停车</span><span class="label-blue label-small">快充</span><span class="label-yellow label-small">慢充</span>
+            </div>
+            <div class="label-primary label-small">正常</div>
+        </div>
+    </div>
+    <div class="weui-cells ">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <img class="img__thumb" src="../../images/sjbd.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <h3 class="ellipsis">杭州万达广场充电站</h3>
+                </div>
+                <p class="weui-media-box__desc">
+                    <span class="lt-30">费率：10元/度</span><br/>奥能运营商 奥能运营 商奥能运营商</p>
+            </div>
+            <div class="weui-cell__hd distance_cell">
+                <img src="../../images/icon_juli.png" alt="">
+                <p>10km</p>
+            </div>
+        </div>
+        <div class="weui-flex p-1 br-t-1">
+            <div class="weui-flex__item">
+                当前空闲：<span class="text-primary">10</span>台 <span class="label-green label-small">免费停车</span><span class="label-blue label-small">快充</span><span class="label-yellow label-small">慢充</span>
+            </div>
+            <div class="label-primary label-small">正常</div>
+        </div>
+    </div>
+    <div class="weui-cells ">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <img class="img__thumb" src="../../images/sjbd.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <h3 class="ellipsis">杭州万达广场充电站</h3>
+                </div>
+                <p class="weui-media-box__desc">
+                    <span class="lt-30">费率：10元/度</span><br/>奥能运营商 奥能运营 商奥能运营商</p>
+            </div>
+            <div class="weui-cell__hd distance_cell">
+                <img src="../../images/icon_juli.png" alt="">
+                <p>10km</p>
+            </div>
+        </div>
+        <div class="weui-flex p-1 br-t-1">
+            <div class="weui-flex__item">
+                当前空闲：<span class="text-primary">10</span>台 <span class="label-green label-small">免费停车</span><span class="label-blue label-small">快充</span><span class="label-yellow label-small">慢充</span>
+            </div>
+            <div class="label-primary label-small">正常</div>
+        </div>
+    </div>
+    <div class="weui-cells ">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <img class="img__thumb" src="../../images/sjbd.png" alt="">
+            </div>
+            <div class="weui-cell__bd">
+                <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <h3 class="ellipsis">杭州万达广场充电站</h3>
+                </div>
+                <p class="weui-media-box__desc">
+                    <span class="lt-30">费率：10元/度</span><br/>奥能运营商 奥能运营 商奥能运营商</p>
+            </div>
+            <div class="weui-cell__hd distance_cell">
+                <img src="../../images/icon_juli.png" alt="">
+                <p>10km</p>
+            </div>
+        </div>
+        <div class="weui-flex p-1 br-t-1">
+            <div class="weui-flex__item">
+                当前空闲：<span class="text-primary">10</span>台 <span class="label-green label-small">免费停车</span><span class="label-blue label-small">快充</span><span class="label-yellow label-small">慢充</span>
+            </div>
+            <div class="label-primary label-small">正常</div>
+        </div>
+    </div>
+</div>
+
+<div class="top_filter dn" >
+    <div class="filter_inner">
+        <div class="filter_con">
+            <div class="filter_con_cell">
+                <h4 >充电方式</h4>
+                <div class="con_btns">
+                    <button class="filter_btn active" >直流桩</button>
+                    <button class="filter_btn " >交流桩</button>
+                    <button class="filter_btn "  >混合桩</button>
+                </div>
+            </div>
+            <div class="filter_con_cell">
+                <h4 >营业状态</h4>
+                <div class="con_btns">
+                    <button class="filter_btn active"  >24小时</button>
+                    <button class="filter_btn"  >营业中</button>
+                </div>
+            </div>
+        </div>
+        <div class="filter_footer">
+            <button class="foo_btn" >取消筛选</button>
+            <button class="foo_btn confirm_btn" >确定</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../lib/jquery-2.1.4.js"></script>
+<script src="../../lib/fastclick.js"></script>
+<script src="../../lib/swiper.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+
+        $(".swiper-container").swiper();
+
+        $("#selectCity").picker({
+            title: "请选择城市",
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市', ]
+                }
+            ],
+            onClose:function(val){
+                console.log(val)
+            }
+        });
+
+    });
+
+
+</script>
+<script src="../../lib/jquery-weui.min.js"></script>
 </body>
 </html>
