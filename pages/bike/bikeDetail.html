@@ -8,15 +8,118 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
     <meta content="telephone=no,email=no" name="format-detection">
-    <title>云充电-自行车电站详情</title>
+    <title>云充电-自行车站点详情</title>
     <link rel="stylesheet" href="../../css/weui.min.css">
     <link rel="stylesheet" href="../../css/jquery-weui.min.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        .stake_img{
+            width: 100px;
+            height: 100px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .stake_info h4{
+            font-size:14px;
+            color: #000000;
+        }
+        .stake_info p{
+            font-size:12px;
+            color: #999999;
+            overflow: hidden;
+            clear: both;
+            margin-top: 4px;
+        }
+
+        .gun_info p{
+            min-height:30px;
+            line-height: 30px;
+            color: #999999;
+            overflow: hidden;
+            padding-right: 4px;
+        }
+        .gun_img{
+            width: 60px;
+            height: 60px;
+            border:1px solid #eeeeee;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .gun_status{
+            height:30px;
+            line-height: 30px;
+            padding-left:24px;
+            color: #999999;
+            background: url("../../images/icon_state1.png") no-repeat center left;
+            background-size:20px 20px;
+        }
+        .icon_car_type{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url("../../images/icon_state1.png") no-repeat center left;
+            background-size:20px 20px;
+        }
+
+    </style>
 </head>
 <body ontouchstart>
 
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <img src="../../images/wdfp.png" class="stake_img" alt="">
+        </div>
+        <div class="weui-cell__bd stake_info">
+            <h4>战斗法师的发放阀手动阀</h4>
+            <p >当前功率：220kw</p>
+            <p><span class="left ellipsis">电压：220V</span> <span class="right">电压：220V</span></p>
+            <p><span class="left">电压：220V</span> <span class="right">电压：220V</span></p>
+            <p>故障次数：0</p>
+        </div>
+    </div>
+</div>
+<div class="weui-cells">
+    <div class="weui-cell">1号枪</div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <img src="../../images/wdfp.png" class="gun_img" alt="">
+        </div>
+        <div class="weui-cell__bd ">
+            <p class="gun_status">充电中</p>
+            <i class="icon_car_type"></i>
+        </div>
+    </div>
+    <div class="weui-cell gun_info">
+        <div class="weui-cell__bd">
+            <p>充电类型:直流</p>
+            <p>充电类型:直流</p>
+            <p>充电类型:直流</p>
+            <p>充电类型:直流</p>
+            <p>充电类型:直流</p>
+            <p>充电类型:直流</p>
+            <p>充电类型:直流直流直流</p>
+        </div>
+        <div class="weui-cell__bd ">
+            <p>接线方式：1A</p>
+            <p>接线方式：1A</p>
+            <p>接线方式：1A</p>
+            <p>接线方式：直流直流直流</p>
+            <p>接线方式：1A</p>
+            <p>接线方式：1A</p>
+            <p>接线方式：1A</p>
+        </div>
+
+    </div>
+
+</div>
 
 
+<div class="weui-btn-area" >
+    <button type="button">立即充电</button>
+</div>
 
 
 <script src="../../lib/jquery-2.1.4.js"></script>

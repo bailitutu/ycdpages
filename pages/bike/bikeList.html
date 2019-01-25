@@ -19,7 +19,8 @@
 
 <div class="head_item">
     <div class="head_position ">
-        <input type="text" readonly value="杭州市"  id="selectCity" >
+        <input type="text" readonly value="浙江省 杭州市"   id="selectCity" >
+        <p id="selectCityName" >杭州市</p>
     </div>
     <div class="search_cell">
         <div class="search_inner weui-cells_form">
@@ -250,6 +251,10 @@
     </div>
 </div>
 
+<button type="button" class="weui-btn scan_btn" id="scan_btn"></button>
+
+
+<!--过滤的弹窗-->
 <div class="top_filter dn" >
     <div class="filter_inner">
         <div class="filter_con">
@@ -277,25 +282,30 @@
 </div>
 
 
+
+
 <script src="../../lib/jquery-2.1.4.js"></script>
 <script src="../../lib/fastclick.js"></script>
 <script src="../../lib/swiper.js"></script>
+<script src="../../lib/city-picker.js"></script>
+
 <script>
     $(function () {
         FastClick.attach(document.body);
 
         $(".swiper-container").swiper();
 
-        $("#selectCity").picker({
+        $("#selectCity").cityPicker({
             title: "请选择城市",
-            cols: [
-                {
-                    textAlign: 'center',
-                    values: ['杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市','杭州市', '北京市', ]
-                }
-            ],
+            showDistrict: false,
+            onChange:function(val){
+                console.log(val.displayValue[1]);
+                // $("#selectCityName").text(val.displayValue[1])
+            },
             onClose:function(val){
                 console.log(val)
+                $("#selectCityName").text(val.displayValue[1])
+                console.log(val.value[1]) //城市对应的code ;
             }
         });
 
